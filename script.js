@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // --- DOM Elements (Original + New Player Elements) ---
+
     const releasesGrid = document.getElementById('releases-grid');
     const playerModal = document.getElementById('player-modal');
     const modalCloseBtn = document.getElementById('modal-close-btn');
@@ -8,11 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalCatalog = document.getElementById('modal-catalog');
     const modalTracklist = document.getElementById('modal-tracklist');
     const modalLinks = document.getElementById('modal-links');
-    
-    // The audio element is the same
+
     const audioPlayer = document.getElementById('audio-player'); 
-    
-    // The now playing bar and its new components
+
     const nowPlayingBar = document.getElementById('now-playing-bar');
     const playerArtImg = document.getElementById('player-art-img');
     const playerTrackTitle = document.getElementById('player-track-title');
@@ -25,18 +23,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const progressBar = document.getElementById('progress-bar');
     const progressBarContainer = document.getElementById('progress-bar-container');
 
-
-    // --- State and Constants ---
     const VISIBLE_CLASS = 'visible';
     const PLAYING_CLASS = 'playing';
     let releasesMap = new Map();
-    // New state for the advanced player
+
     let playlist = [];
     let currentTrackIndex = -1;
     let isPlaying = false;
 
-
-    // --- Original Functions (Largely Unchanged) ---
     const createReleaseElement = (release) => {
         const releaseElement = document.createElement('div');
         releaseElement.className = 'release-item';
@@ -59,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const populateModal = (release) => {
-        // We'll add the releaseId to the modal for reference
+
         playerModal.dataset.releaseId = release.id; 
         modalAlbumImg.src = release.imageUrl;
         modalAlbumImg.alt = `Album cover for ${release.title}`;
@@ -69,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const tracklistFragment = document.createDocumentFragment();
         release.tracklist.forEach((track, index) => {
             const li = document.createElement('li');
-            // Use track index for the new player logic
+
             li.dataset.trackIndex = index; 
             li.innerHTML = `<div><span class="modal-track-number">${String(index + 1).padStart(2, '0')}.</span> ${track}</div>`;
             tracklistFragment.appendChild(li);
@@ -80,8 +74,8 @@ document.addEventListener('DOMContentLoaded', () => {
             .map(([platform, url]) => `<a href="${url}" target="_blank" rel="noopener noreferrer">${platform.toUpperCase()}</a>`)
             .join('');
         modalLinks.innerHTML = linksHTML;
-        
-        updateTrackHighlight(); // Highlight the playing track if this modal is re-opened
+
+        updateTrackHighlight(); 
     };
 
     const openModal = (releaseId) => {
@@ -98,10 +92,9 @@ document.addEventListener('DOMContentLoaded', () => {
         playerModal.classList.remove(VISIBLE_CLASS);
         playerModal.setAttribute('aria-hidden', 'true');
         document.body.style.overflow = '';
-        // Note: We no longer stop the music when closing the modal.
-        // The user can control it from the persistent player bar.
+
     };
-    
+
     const loadReleases = async () => {
         try {
             const response = await fetch('./releases.json');
@@ -125,13 +118,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    // --- NEW Advanced Player Functions ---
     const formatTime = (seconds) => {
         const minutes = Math.floor(seconds / 60);
         const secs = Math.floor(seconds % 60);
         return `${minutes}:${secs.toString().padStart(2, '0')}`;
     };
-    
+
     const updateProgress = () => {
         const { duration, currentTime } = audioPlayer;
         if (duration) {
@@ -141,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
             totalDurationEl.textContent = formatTime(duration);
         }
     };
-    
+
     const setProgress = (e) => {
         const width = progressBarContainer.clientWidth;
         const clickX = e.offsetX;
@@ -155,17 +147,17 @@ document.addEventListener('DOMContentLoaded', () => {
         if (currentTrackIndex < 0) return;
         const track = playlist[currentTrackIndex];
         const release = releasesMap.get(track.releaseId);
-        
+
         playerArtImg.src = release.imageUrl;
         playerTrackTitle.textContent = track.title;
-        playerTrackArtist.textContent = release.artist; // Get artist from the release
-        
+        playerTrackArtist.textContent = release.artist; 
+
         playPauseBtn.classList.toggle(PLAYING_CLASS, isPlaying);
         playPauseBtn.setAttribute('aria-label', isPlaying ? 'Pause' : 'Play');
-        
+
         updateTrackHighlight();
     };
-    
+
     const updateTrackHighlight = () => {
         modalTracklist.querySelectorAll('li').forEach(li => li.classList.remove(PLAYING_CLASS));
 
@@ -182,14 +174,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const playAudio = () => {
         if (currentTrackIndex === -1 && playlist.length > 0) {
-            loadTrack(0); // Start with the first track if nothing is loaded
+            loadTrack(0); 
         } else {
             isPlaying = true;
             audioPlayer.play();
             updatePlayerUI();
         }
     };
-    
+
     const pauseAudio = () => {
         isPlaying = false;
         audioPlayer.pause();
@@ -223,9 +215,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-
-    // --- Event Listeners (Original + New) ---
-
     releasesGrid.addEventListener('click', (e) => {
         const releaseItem = e.target.closest('.release-item[data-release-id]');
         if (releaseItem) {
@@ -239,8 +228,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const releaseId = playerModal.dataset.releaseId;
             const release = releasesMap.get(releaseId);
             const clickedTrackIndex = parseInt(trackItem.dataset.trackIndex, 10);
-            
-            // Build a new playlist from the clicked album
+
             playlist = release.tracklist.map((trackName, index) => ({
                 title: trackName,
                 audioSrc: release.audioSrc[index],
@@ -267,7 +255,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // New Player Control Listeners
     playPauseBtn.addEventListener('click', handlePlayPause);
     nextBtn.addEventListener('click', playNext);
     prevBtn.addEventListener('click', playPrev);
@@ -276,7 +263,5 @@ document.addEventListener('DOMContentLoaded', () => {
     audioPlayer.addEventListener('loadedmetadata', updateProgress);
     progressBarContainer.addEventListener('click', setProgress);
 
-
-    // --- Initialization ---
     loadReleases();
 });
