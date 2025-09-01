@@ -7,7 +7,7 @@
     "links": {
     },
     "tracklist": [
-      "Light Up THe Night",
+      "Light Up The Night",
       "Luxury Tax",
       "By Your Side",
       "Fish Scales",
@@ -29,7 +29,7 @@
   {
     "id": "WCF",
     "title": "Windy City Freestyle",
-    "catalogInfo": "CN-WCF 20.6.25",
+    "catalogInfo": "CN-WCF 6.20.25",
     "imageUrl": "./assets/WCF/WCF.png",
     "links": {
       "SoundCloud": "https://sc.bloat.com/creamer-nation-988867731/windy-city-freestyle",
@@ -45,15 +45,15 @@
   {
     "id": "TOAK",
     "title": "Three-Of-A-Kind",
-    "catalogInfo": "CN-TOAK 9.8.25",
+    "catalogInfo": "CN-TOAK 8.9.25",
     "imageUrl": "./assets/TOAK/TOAK.jpg",
     "links": {
       "SoundCloud": "https://sc.bloat.com/creamer-nation-988867731/sets/three-of-a-kind",
       "Download": "./assets/TOAK/Three-Of-A-Kind.zip"
     },
     "tracklist": [
-      "Windy City Freestyle (mix)",
-      "System Overload (mix)",
+      "Windy City Freestyle (Mix)",
+      "System Overload (Mix)",
       "Championship Ring 2"
     ],
     "audioSrc": [
@@ -65,7 +65,7 @@
   {
     "id": "VISION",
     "title": "VISION",
-    "catalogInfo": "CN-VISION 10.1.25",
+    "catalogInfo": "CN-VISION 1.10.25",
     "imageUrl": "./assets/VISION/VISION.png",
     "links": {
       "Tidal": "https://tidal.com/album/420470433",
@@ -83,7 +83,7 @@
   {
     "id": "ACNC",
     "title": "A CREAMER NATION CHRISTMAS",
-    "catalogInfo": "CN-ACNC 25.12.24",
+    "catalogInfo": "CN-ACNC 12.25.24",
     "imageUrl": "./assets/ACNC/ACNC.png",
     "links": {
       "SoundCloud": "https://sc.bloat.com/creamer-nation-988867731/sets/a-creamer-nation-christmas",
@@ -205,7 +205,7 @@
   {
     "id": "TCNT1",
     "title": "THE CREAMER NATION TAPE VOL. 1",
-    "catalogInfo": "CN-T1 6.26.24",
+    "catalogInfo": "CN-T1 7.26.24",
     "imageUrl": "./assets/CNTAPE1/CNTAPE1B.png",
     "links": {
       "SoundCloud": "https://sc.bloat.cat/creamer-nation-988867731/sets/the-creamer-nation-tape-vol-1",
