@@ -1,0 +1,258 @@
+[
+  {
+    "id": "TCNT2",
+    "title": "THE CREAMER NATION TAPE VOL. 2",
+    "catalogInfo": "CN-T2 SOON",
+    "imageUrl": "./assets/CNTAPE2/CNTAPE2.png",
+    "links": {
+    },
+    "tracklist": [
+      "Light Up THe Night",
+      "Luxury Tax",
+      "By Your Side",
+      "Fish Scales",
+      "WAR 3",
+      "With You",
+      "Deja",
+      "Month-Long Spree",
+      "Highway Robbery",
+      "Lost In Translation",
+      "Midnight Express (Interlude)",
+      "Runnin' Outta Love",
+      "Boys Don't Cry",
+      "Lunar Eclipse",
+      "Red Water",
+      "The Hunted"
+    ],
+    "audioSrc": []
+  },
+  {
+    "id": "WCF",
+    "title": "Windy City Freestyle",
+    "catalogInfo": "CN-WCF 20.6.25",
+    "imageUrl": "./assets/WCF/WCF.png",
+    "links": {
+      "SoundCloud": "https://sc.bloat.com/creamer-nation-988867731/windy-city-freestyle",
+      "Download": "./assets/WCF/audio/01 Windy City Freestyle.mp3"
+    },
+    "tracklist": [
+      "Windy City Freestyle"
+    ],
+    "audioSrc": [
+      "/assets/WCF/audio/01 Windy City Freestyle.mp3"
+    ]
+  },
+  {
+    "id": "TOAK",
+    "title": "Three-Of-A-Kind",
+    "catalogInfo": "CN-TOAK 9.8.25",
+    "imageUrl": "./assets/TOAK/TOAK.jpg",
+    "links": {
+      "SoundCloud": "https://sc.bloat.com/creamer-nation-988867731/sets/three-of-a-kind",
+      "Download": "./assets/TOAK/Three-Of-A-Kind.zip"
+    },
+    "tracklist": [
+      "Windy City Freestyle (mix)",
+      "System Overload (mix)",
+      "Championship Ring 2"
+    ],
+    "audioSrc": [
+      "/assets/TOAK/audio/01 Windy City Freestyle (Mix).mp3",
+      "/assets/TOAK/audio/02 System Overload (Mix).mp3",
+      "/assets/TOAK/audio/03 Championship Ring 2.mp3"
+    ]
+  },
+  {
+    "id": "VISION",
+    "title": "VISION",
+    "catalogInfo": "CN-VISION 10.1.25",
+    "imageUrl": "./assets/VISION/VISION.png",
+    "links": {
+      "Tidal": "https://tidal.com/album/420470433",
+      "Spotify": "https://open.spotify.com/album/4ENMydvAyHsh1r5tDJ67l8",
+      "Apple Music": "https://music.apple.com/album/1798860467",
+      "Download": "./assets/VISION/audio/01 VISION.flac"
+    },
+    "tracklist": [
+      "VISION"
+    ],
+    "audioSrc": [
+      "./assets/VISION/audio/01 VISION.flac"
+    ]
+  },
+  {
+    "id": "ACNC",
+    "title": "A CREAMER NATION CHRISTMAS",
+    "catalogInfo": "CN-ACNC 25.12.24",
+    "imageUrl": "./assets/ACNC/ACNC.png",
+    "links": {
+      "SoundCloud": "https://sc.bloat.com/creamer-nation-988867731/sets/a-creamer-nation-christmas",
+      "Download": "./assets/ACNC/A Creamer Nation Christmas.zip"
+    },
+    "tracklist": [
+      "CHRISTMAS IN CN",
+      "HRT CHRISTMAS",
+      "INCEST BALLS",
+      "SANTA'S HERE (INTERLUDE)",
+      "HOLY WAR",
+      "THERE IS NO SANTA",
+      "JOLLY ASS SONG!!!",
+      "NAUGHTY LIST (OUTRO)"
+    ],
+    "audioSrc": [
+      "./assets/ACNC/audio/01 CHRISTMAS IN CN.mp3",
+      "./assets/ACNC/audio/02 HRT CHRISTMAS.mp3",
+      "./assets/ACNC/audio/03 INCEST BALLS.mp3",
+      "./assets/ACNC/audio/04 SANTA'S HERE (INTERLUDE).mp3",
+      "./assets/ACNC/audio/05 HOLY WAR.mp3",
+      "./assets/ACNC/audio/06 THERE IS NO SANTA.mp3",
+      "./assets/ACNC/audio/07 JOLLY ASS SONG!!!.mp3",
+      "./assets/ACNC/audio/08 NAUGHTY LIST (OUTRO).mp3"
+    ]
+  },
+  {
+    "id": "CRMRSZN",
+    "title": "CREAMER SEASON",
+    "catalogInfo": "CN-CRMRSZN 10.31.24",
+    "imageUrl": "./assets/CRMRSZN/CRMRSZN.png",
+    "links": {
+      "SoundCloud": "https://sc.bloat.com/creamer-nation-988867731/sets/the-creamer-nation-tape-vol-1",
+      "Download": "./assets/CRMRSZN/CREAMER SEASON.zip"
+    },
+    "tracklist": [
+      "CREAMER NATIONAL ANTHEM (INTRO)",
+      "FLIPPED",
+      "LACED",
+      "WAR 2",
+      "SAUSAGE FINGERS",
+      "HIDDEN PLACE",
+      "JUMP JUMP",
+      "SYSTEM OVERLOAD",
+      "CHAMPIONSHIP RING",
+      "LEAN FREESTYLE (INTERLUDE)",
+      "STADIUM RAVE",
+      "RUNNIN'",
+      "COMMERCIAL BREAK",
+      "BLOOM",
+      "KNOCKIN"
+    ],
+    "audioSrc": [
+      "/assets/CRMRSZN/audio/01 CREAMER NATIONAL ANTHEM (INTRO).mp3",
+      "/assets/CRMRSZN/audio/02 FLIPPED.mp3",
+      "/assets/CRMRSZN/audio/03 LACED.mp3",
+      "/assets/CRMRSZN/audio/04 WAR 2.mp3",
+      "/assets/CRMRSZN/audio/05 SAUSAGE FINGERS.mp3",
+      "/assets/CRMRSZN/audio/06 HIDDEN PLACE.mp3",
+      "/assets/CRMRSZN/audio/07 JUMP JUMP.mp3",
+      "/assets/CRMRSZN/audio/08 SYSTEM OVERLOAD.mp3",
+      "/assets/CRMRSZN/audio/09 CHAMPIONSHIP RING.mp3",
+      "/assets/CRMRSZN/audio/10 LEAN FREESTYLE (INTERLUDE).mp3",
+      "/assets/CRMRSZN/audio/11 STADIUM RAVE.mp3",
+      "/assets/CRMRSZN/audio/12 RUNNIN'.mp3",
+      "/assets/CRMRSZN/audio/13 COMMERCIAL BREAK.mp3",
+      "/assets/CRMRSZN/audio/14 BLOOM.mp3",
+      "/assets/CRMRSZN/audio/15 KNOCKIN'.mp3"
+    ]
+  },
+  {
+    "id": "SRFR",
+    "title": "SERIAL RAPIST FREESTYLE (REMIX)",
+    "catalogInfo": "CN-SRFR 10.10.24",
+    "imageUrl": "./assets/SRFR/SRFR.png",
+    "links": {
+      "Untitled": "https://untitled.stream/library/project/UthWRh3J8XNnRrlZtODsA",
+      "Download": "./assets/SRFR/SERIAL RAPIST FREESTYLE (REMIX).mp3"
+    },
+    "tracklist": [
+      "SERIAL RAPIST FREESTYLE (REMIX)"
+    ],
+    "audioSrc": [
+      "./assets/SRFR/SERIAL RAPIST FREESTYLE (REMIX).mp3"
+    ]
+  },
+  {
+    "id": "MC",
+    "title": "MORE CREAM",
+    "catalogInfo": "CN-MC 8.2.24",
+    "imageUrl": "./assets/MORECREAM/MORECREAM.png",
+    "links": {
+      "SoundCloud": "https://sc.bloat.cat/creamer-nation-988867731/sets/more-cream",
+      "YouTube": "https://www.youtube.com/watch?v=2PEgjUoCHvw&list=PLY2C_3y164dvExzUd1ITFf6jU47RVVPhr",
+      "Download": "./assets/MORECREAM/MORE CREAM.zip"
+    },
+    "tracklist": [
+      "GRAVEYARD",
+      "RIOT",
+      "HAWK TUAH (INTERLUDE)",
+      "SPLIT",
+      "R.I.P BOZO",
+      "CRACK NATION",
+      "RAETARD",
+      "CREAMER OUTRO"
+    ],
+    "audioSrc": [
+      "./assets/MORECREAM/audio/01 GRAVEYARD.mp3",
+      "./assets/MORECREAM/audio/02 RIOT.mp3",
+      "./assets/MORECREAM/audio/03 HAWK TUAH (INTERLUDE).mp3",
+      "./assets/MORECREAM/audio/04 SPLIT.mp3",
+      "./assets/MORECREAM/audio/05 R.I.P BOZO.mp3",
+      "./assets/MORECREAM/audio/06.1 CRACK NATION.mp3",
+      "./assets/MORECREAM/audio/06.2 RAETARD.mp3",
+      "./assets/MORECREAM/audio/07 CREAMER OUTRO.mp3"
+
+    ]
+  },
+  {
+    "id": "TCNT1",
+    "title": "THE CREAMER NATION TAPE VOL. 1",
+    "catalogInfo": "CN-T1 6.26.24",
+    "imageUrl": "./assets/CNTAPE1/CNTAPE1B.png",
+    "links": {
+      "SoundCloud": "https://sc.bloat.cat/creamer-nation-988867731/sets/the-creamer-nation-tape-vol-1",
+      "YouTube": "https://www.youtube.com/watch?v=2PEgjUoCHvw&list=PLY2C_3y164dvExzUd1ITFf6jU47RVVPhr",
+      "Download": "./assets/CNTAPE1/THE CREAMER NATION TAPE VOL. 1.zip"
+    },
+    "tracklist": [
+      "INTRO",
+      "CREAMER NATION",
+      "BOOSIE",
+      "WAR",
+      "EENIE MEENIE MINEY MO",
+      "RAEDOWN",
+      "TEMU (ft. lukie)",
+      "HOMOPHOBIA VS HOMOSEXUALITY",
+      "FANUM",
+      "SPRING '23",
+      "SUMMER '23",
+      "LET'S STOP COMEDY. (INTERLUDE)",
+      "CHRIS GRIFFIN",
+      "ULTRAVIOLET",
+      "SERIAL RAPIST FREESTYLE",
+      "SCHIZO FORTNITE",
+      "PEG SUMN",
+      "BUT GOT THIS INSTEAD",
+      "FOR THE CREAMERS"
+    ],
+    "audioSrc": [
+      "./assets/CNTAPE1/audio/01 INTRO.mp3",
+      "./assets/CNTAPE1/audio/02 CREAMER NATION.mp3",
+      "./assets/CNTAPE1/audio/03 BOOSIE.mp3",
+      "./assets/CNTAPE1/audio/04 WAR.mp3",
+      "./assets/CNTAPE1/audio/05 EENIE MEENIE MINEY MO.mp3",
+      "./assets/CNTAPE1/audio/06 RAEDOWN.mp3",
+      "./assets/CNTAPE1/audio/07 TEMU.mp3",
+      "./assets/CNTAPE1/audio/08 HOMOPHOBIA VS HOMOSEXUALITY.mp3",
+      "./assets/CNTAPE1/audio/09 FANUM.mp3",
+      "./assets/CNTAPE1/audio/10 SPRING '23.mp3",
+      "./assets/CNTAPE1/audio/11 SUMMER '23.mp3",
+      "./assets/CNTAPE1/audio/12 LET'S STOP COMEDY. (INTERLUDE).mp3",
+      "./assets/CNTAPE1/audio/13 CHRIS GRIFFIN.mp3",
+      "./assets/CNTAPE1/audio/14 ULTRAVIOLET.mp3",
+      "./assets/CNTAPE1/audio/15 SERIAL RAPIST FREESTYLE.mp3",
+      "./assets/CNTAPE1/audio/16 SCHIZO FORTNITE.mp3",
+      "./assets/CNTAPE1/audio/17 PEG SUMN.mp3",
+      "./assets/CNTAPE1/audio/18 BUT GOT THIS INSTEAD.mp3",
+      "./assets/CNTAPE1/audio/19 FOR THE CREAMERS.mp3"
+    ]
+  }
+]

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREAMER NATION</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="./favicon.png">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CREAMER NATION<br><img src="./assets/logo.png" height="90px" ></h1>
+        </header>
+
+        <main>
+            <section id="music" aria-labelledby="music-heading">
+                <h2 id="music-heading">[ DISCOGRAPHY ]</h2>
+                <div id="releases-grid">
+                    <!-- Skeletons are a good UX pattern for loading states. -->
+                    <div class="release-item-skeleton">
+                        <div class="skeleton-img"></div>
+                        <div class="skeleton-text"></div>
+                        <div class="skeleton-text short"></div>
+                    </div>
+                    <div class="release-item-skeleton">
+                        <div class="skeleton-img"></div>
+                        <div class="skeleton-text"></div>
+                        <div class="skeleton-text short"></div>
+                    </div>
+                    <div class="release-item-skeleton">
+                        <div class="skeleton-img"></div>
+                        <div class="skeleton-text"></div>
+                        <div class="skeleton-text short"></div>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section id="about" aria-labelledby="about-heading">
+                <h2 id="about-heading">[ ABOUT ]</h2>
+                <p>Creamer Nation is an experimental hip-hop collective formed in late 2023 by a group of close internet friends. Blending humor with emotion, their sound evolved from meme rap into something more intentional and expressive. The core members are Archivist, Whisp, MC KV!, Alis, and InfiniteCris. Their discography includes THE CREAMER NATION TAPE VOL. 1, MORE CREAM, CREAMER SEASON, A CREAMER NATION CHRISTMAS, and their latest EP, Three-Of-A-Kind.</p>
+            </section>
+            <hr>
+            <section id="contact" aria-labelledby="contact-heading">
+                <h2 id="contact-heading">[ CONTACT ]</h2>
+                <p>E-Mail: <a href="mailto:hello@creamer.nation">diddy@creamernation.men</a>. Join our <a href="https://discord.gg/8WDVr2bxmq">discord</a> for other queries</p>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-links">
+                <a href="https://soundcloud.com" target="_blank" rel="noopener noreferrer">[SOUNDCLOUD]</a>
+                <a href="https://discord.gg/8WDVr2bxmq" target="_blank" rel="noopener noreferrer">[DISCORD]</a>
+            </div>
+            <p>EST. 2023 - CREAMER NATION. NO RIGHTS RESERVED.</p>
+        </footer>
+    </div>
+
+    <div class="modal-overlay" id="player-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-player">
+            <button class="modal-close-btn" id="modal-close-btn" aria-label="Close player"><span aria-hidden="true">&times;</span></button>
+            <div class="modal-top-section">
+                <figure class="modal-album-art">
+                    <img id="modal-album-img" src="" alt="Album Art" loading="lazy" decoding="async">
+                </figure>
+                <div class="modal-details">
+                    <h3 id="modal-title"></h3>
+                    <p class="artist-info" id="modal-artist"></p>
+                    <p class="catalog-info" id="modal-catalog"></p>
+                    <div class="modal-listen-links" id="modal-links"></div>
+                </div>
+            </div>
+            <ol class="modal-tracklist" id="modal-tracklist"></ol>
+        </div>
+    </div>
+
+    <audio id="audio-player"></audio>
+    
+    <!-- Revamped Persistent Player Bar -->
+    <div id="now-playing-bar" role="region" aria-label="Music Player">
+        <div class="player-content">
+            <div class="player-album-art">
+                <img id="player-art-img" src="" alt="Currently playing album art">
+            </div>
+            <div class="player-track-info">
+                <div id="player-track-title">Select a track</div>
+                <div id="player-track-artist"></div>
+            </div>
+            <div class="player-controls">
+                <button id="prev-btn" aria-label="Previous track">
+                    <svg role="img" height="16" width="16" viewBox="0 0 16 16"><path d="M13 2.5L5 8l8 5.5V2.5zM3 2.5v11h2V2.5H3z"></path></svg>
+                </button>
+                <button id="play-pause-btn" aria-label="Play">
+                    <span class="play-icon">
+                        <svg role="img" height="16" width="16" viewBox="0 0 16 16"><path d="M4.018 14L14.41 8 4.018 2z"></path></svg>
+                    </span>
+                    <span class="pause-icon">
+                         <svg role="img" height="16" width="16" viewBox="0 0 16 16"><path d="M2.7 1a.7.7 0 00-.7.7v12.6a.7.7 0 00.7.7h2.6a.7.7 0 00.7-.7V1.7a.7.7 0 00-.7-.7H2.7zm8 0a.7.7 0 00-.7.7v12.6a.7.7 0 00.7.7h2.6a.7.7 0 00.7-.7V1.7a.7.7 0 00-.7-.7h-2.6z"></path></svg>
+                    </span>
+                </button>
+                <button id="next-btn" aria-label="Next track">
+                    <svg role="img" height="16" width="16" viewBox="0 0 16 16"><path d="M11 2.5v11h2V2.5h-2zM3 2.5l8 5.5-8 5.5V2.5z"></path></svg>
+                </button>
+            </div>
+             <div class="player-progress">
+                <span id="current-time">0:00</span>
+                <div class="progress-bar-container" id="progress-bar-container">
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
+                <span id="total-duration">0:00</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js" defer></script>
+</body>
+</html>
