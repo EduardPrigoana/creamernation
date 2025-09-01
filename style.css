@@ -25,7 +25,7 @@ body {
     color: var(--text-color);
     font-size: 18px;
     line-height: 1.7;
-    /* This padding is still useful to ensure the footer can be seen behind the floating player */
+    
     padding-bottom: 120px; 
 }
 
@@ -186,9 +186,9 @@ a:hover {
     cursor: pointer;
     display: flex;
     align-items: center;
-    /* CHANGE THIS: from space-between to flex-start */
+    
     justify-content: flex-start; 
-    gap: 0; /* We will handle spacing manually now */
+    gap: 0; 
     border-radius: 2px;
 }
 .modal-tracklist li:hover { background-color: var(--accent-pink-dim); }
@@ -198,7 +198,7 @@ a:hover {
     color: #777; 
     width: 2.2ch; 
     text-align: right; 
-    /* REMOVED margin-right from here to let the next rule control spacing */
+    
 }
 
 .track-number { color: #777; width: 2.2ch; text-align: right; margin-right: 1rem; }
@@ -215,13 +215,12 @@ a:hover {
     color: var(--bg-color);
 }
 
-/* --- UPDATED Floating Player Bar Styles --- */
 #now-playing-bar {
     position: fixed;
-    bottom: -150px; /* Start hidden */
+    bottom: -150px; 
     
-    /* REMOVED: left: 0; right: 0; */
-    /* ADDED: Centering and width constraints */
+    
+    
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
@@ -233,16 +232,16 @@ a:hover {
     font-size: 1rem;
     padding: 0.75rem 1rem;
     
-    /* ADDED: Styles for the floating effect */
+    
     border: 1px solid var(--accent-pink-dim);
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
     
-    /* Tweak transition to be slightly smoother */
+    
     transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 #now-playing-bar.visible {
-    /* CHANGED: Instead of bottom: 0, give it some space */
+    
     bottom: 20px;
 }
 
